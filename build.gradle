@@ -24,6 +24,7 @@ repositories {
 ext {
 	set('springModulithVersion', "1.2.0")
 	set('testcontainersVersion', "1.19.8")
+	set('mapstructVersion', "1.5.5")
 }
 
 dependencies {
@@ -38,6 +39,9 @@ dependencies {
 	implementation 'org.springframework.kafka:spring-kafka'
 	implementation 'org.springframework.modulith:spring-modulith-starter-core'
 	implementation 'org.springframework.modulith:spring-modulith-starter-jpa'
+	implementation "org.mapstruct:mapstruct:${mapstructVersion}.Final"
+	annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}.Final"
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'

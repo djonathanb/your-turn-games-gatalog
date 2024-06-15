@@ -1,7 +1,6 @@
 package djonathanb.yourturn.game_catalog.distributors.internal.adapters.controller.impl;
 
 import djonathanb.yourturn.game_catalog.distributors.internal.adapters.controller.DistributorDTO;
-import djonathanb.yourturn.game_catalog.distributors.internal.adapters.controller.DistributorsMapper;
 import djonathanb.yourturn.game_catalog.distributors.internal.adapters.controller.DistributorsService;
 import djonathanb.yourturn.game_catalog.distributors.internal.entities.DistributorId;
 import djonathanb.yourturn.game_catalog.distributors.internal.usecases.*;
@@ -59,7 +58,8 @@ public class DistributorsServiceImpl implements DistributorsService {
 
     @Override
     public void deleteDistributor(DistributorId id) {
-        deleteDistributorUseCase.execute(id);
+        throw new UnsupportedOperationException("Not implemented yet");
+//        deleteDistributorUseCase.execute(id);
     }
 
 }
